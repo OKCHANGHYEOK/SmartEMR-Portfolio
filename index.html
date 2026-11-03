@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SmartEMR 개인 프로젝트 포트폴리오">
+  <title>SmartEMR | Project Portfolio</title>
+
+  <link rel="stylesheet" href="./sytle.css"/>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="eyebrow">Personal Project · Portfolio</div>
+      <h1>SmartEMR</h1>
+      <div class="subtitle">의료기관 업무 관리 시스템</div>
+      <p class="hero-desc">
+        SmartEMR 은 환자 관리부터 예약, 접수, 진료, 처방 및 수납까지 이어지는 의료기관의 업무 흐름을
+        관리하기 위해 개발한 개인 프로젝트입니다.
+        <br>
+        WPF 클라이언트와 FastAPI 벡엔드를 분리하고, SQL Server 를 통해 데이터를 관리하도록 구성했습니다.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#resources">프로젝트 자료 보기</a>
+        <a class="button" href="#architecture">시스템 아키텍처</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <a href="#overview">프로젝트 개요</a>
+      <a href="#stack">기술 스택</a>
+      <a href="#features">주요 기능</a>
+      <a href="#architecture">아키텍처</a>
+      <a href="#engineering">기술적 개선</a>
+      <a href="#demo">시연 영상</a>
+      <a href="#resources">프로젝트 자료</a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="overview">
+      <div class="section-head">
+        <div class="section-no">01 / OVERVIEW</div>
+        <h2>프로젝트 개요</h2>
+        <p class="lead">실제 의료정보 시스템 개발 및 유지보수 경험을 바탕으로 업무 흐름을 재구성했습니다.</p>
+      </div>
+      <div class="overview">
+        <div class="stat"><div class="stat-label">개발 형태</div><div class="stat-value">개인 프로젝트</div></div>
+        <div class="stat"><div class="stat-label">개발 기간</div><div class="stat-value">약 6개월</div></div>
+        <div class="stat"><div class="stat-label">개발 인원</div><div class="stat-value">1명</div></div>
+        <div class="stat"><div class="stat-label">프로젝트 유형</div><div class="stat-value">의료기관 업무 관리</div></div>
+      </div>
+      <div class="panel" style="margin-top:14px">
+        <strong>담당 업무</strong>
+        <p class="lead">프로젝트 기획, 데이터베이스 설계, WPF 클라이언트 개발, FastAPI 백엔드 개발 및 연동</p>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="section-head">
+        <div class="section-no">02 / TECH STACK</div>
+        <h2>기술 스택</h2>
+      </div>
+      <div class="stack-grid">
+        <article class="card">
+          <h3>Client</h3>
+          <p>C# 기반 WPF 데스크톱 애플리케이션</p>
+          <div class="tag-list"><span class="tag">C#</span><span class="tag">WPF</span><span class="tag">MVVM</span><span class="tag">DI</span><span class="tag">WebView2</span></div>
+        </article>
+        <article class="card">
+          <h3>Backend</h3>
+          <p>HTTP API 및 인증·업무 로직 처리</p>
+          <div class="tag-list"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">aioodbc</span><span class="tag">JWT</span></div>
+        </article>
+        <article class="card">
+          <h3>Database & Tools</h3>
+          <p>관계형 데이터 관리 및 개발 도구</p>
+          <div class="tag-list"><span class="tag">Microsoft SQL Server</span><span class="tag">Stored Procedure</span><span class="tag">Git</span><span class="tag">Visual Studio</span><span class="tag">VS Code</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="section-head">
+        <div class="section-no">03 / FEATURES</div>
+        <h2>주요 기능</h2>
+        <p class="lead">환자 정보를 중심으로 예약,접수,진료,처방,수납으로 이어지는 의료 업무 프로세스를 구현했습니다.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="card"><div class="feature-mark">01</div><h3>환자 관리</h3><p>환자 등록·수정, 검색 및 이력 조회</p></article>
+        <article class="card"><div class="feature-mark">02</div><h3>예약 관리</h3><p>예약 등록·수정, 캘린더 기반 예약 현황 및 이력 조회</p></article>
+        <article class="card"><div class="feature-mark">03</div><h3>접수 관리</h3><p>접수 등록·수정 및 접수 이력 조회</p></article>
+        <article class="card"><div class="feature-mark">04</div><h3>진료 관리</h3><p>접수와 진료 간 연계, 진료 정보 저장 및 이력 조회</p></article>
+        <article class="card"><div class="feature-mark">05</div><h3>처방 관리</h3><p>진료 처방 등록·수정 및 처방 이력 조회</p></article>
+        <article class="card"><div class="feature-mark">06</div><h3>수납 관리</h3><p>진료 단위 수납 정보 관리 및 결제 처리</p></article>
+      </div>
+      <div class="panel" style="margin-top:14px">
+        <strong>외부 결제 연동</strong>
+        <p class="lead">WebView2를 활용해 네이버페이 결제 화면을 WPF 클라이언트와 연동하고, 승인 결과를 내부 수납 데이터에 반영하도록 구현했습니다.</p>
+      </div>
+    </section>
+
+    <section id="architecture">
+      <div class="section-head">
+        <div class="section-no">04 / ARCHITECTURE</div>
+        <h2>시스템 아키텍처</h2>
+        <p class="lead">클라이언트, 백엔드, 데이터베이스의 역할을 분리한 3계층 구조입니다.</p>
+      </div>
+      <div class="architecture">
+        <img src="./Images/SmartEMR_System_Architecture.png" alt="SmartEMR 시스템 아키텍처 다이어그램">
+        <p class="caption">WPF Client ↔ FastAPI Backend ↔ Microsoft SQL Server</p>
+      </div>
+    </section>
+
+    <section id="engineering">
+      <div class="section-head">
+        <div class="section-no">05 / ENGINEERING</div>
+        <h2>기술적 개선 및 설계</h2>
+      </div>
+      <div class="improve-grid">
+        <article class="card improve-card">
+          <h3>WPF 클라이언트 아키텍처</h3>
+          <ul>
+            <li>MVVM 패턴 기반으로 View와 ViewModel의 역할 분리</li>
+            <li>전역 서비스 로케이터 방식에서 DI 기반 의존성 관리로 개선</li>
+            <li>DataStore와 Service의 역할을 구분해 API 호출 및 데이터 처리 구조 정리</li>
+          </ul>
+        </article>
+        <article class="card improve-card">
+          <h3>클라이언트와 백엔드 역할 분리</h3>
+          <ul>
+            <li>WPF 클라이언트와 FastAPI 백엔드를 HTTP 통신으로 연계</li>
+            <li>백엔드에서 데이터 조회·저장 및 JWT 인증 처리</li>
+            <li>공통 응답 구조를 통해 처리 결과와 오류 정보를 전달</li>
+          </ul>
+        </article>
+        <article class="card improve-card">
+          <h3>의료 업무 데이터 모델링</h3>
+          <ul>
+            <li>환자, 예약, 접수, 진료, 처방, 수납 간 관계를 고려한 DB 구조 설계</li>
+            <li>예약 → 접수 → 진료로 이어지는 업무 데이터 흐름 및 상태 관리</li>
+          </ul>
+        </article>
+        <article class="card improve-card">
+          <h3>외부 결제 시스템 연동</h3>
+          <ul>
+            <li>WebView2를 활용한 네이버페이 결제 화면 연동</li>
+            <li>결제 요청, 승인 결과 처리 및 내부 수납 데이터 반영</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="screens">
+      <div class="section-head">
+        <div class="section-no">06 / SCREENSHOTS</div>
+        <h2>주요 화면</h2>
+        <p class="lead">실제 프로그램 화면 캡처를 추가해 구현 결과를 확인할 수 있도록 구성하세요.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="media-placeholder">
+          <p><strong style="font-size: large;">로그인 화면</strong></p>
+          <img src="./Images/Screens/login.png" alt="환자 관리 화면 캡처">
+        </div>
+        <div class="media-placeholder">
+            <p><strong style="font-size: large;">예약 화면</strong></p>
+            <img src="./Images/Screens/reservation.png" alt="예약 화면 캡처">
+        </div>
+        <div class="media-placeholder">
+            <p><strong style="font-size: large;">접수 화면</strong></p>
+            <img src="./Images/Screens/desk.png" alt="접수 화면 캡처">
+        </div>
+        <div class="media-placeholder">
+          <p><strong style="font-size: large;">진료 화면</strong></p>
+          <img src="./Images/Screens/consultation.png" alt="진료 화면 캡처">
+        </div>
+        <div class="media-placeholder">
+          <p><strong style="font-size: large;">처방(진료) 화면</strong></p>
+          <img src="./Images/Screens/consultationwithorder.png" alt="진료 처방 화면 캡처">
+        </div>
+        <div class="media-placeholder">
+          <p><strong style="font-size: large;">수납 화면</strong></p>
+          <img src="./Images/Screens/payment.png" alt="수납 화면 캡처">
+        </div>
+      </div>
+    </section>
+
+    <section id="demo">
+      <div class="section-head">
+        <div class="section-no">07 / DEMO</div>
+        <h2>시연 영상</h2>
+        <p class="lead">주요 업무 흐름과 실제 프로그램 동작을 확인할 수 있는 영상 링크를 추가하세요.</p>
+      </div>
+      <div class="media-placeholder">
+        <div><strong>SmartEMR Demo Video</strong>YouTube 또는 공개 가능한 동영상 주소를 준비한 뒤 이 영역에 링크나 영상 임베드를 추가하세요.</div>
+      </div>
+    </section>
+
+    <section id="resources">
+      <div class="section-head">
+        <div class="section-no">08 / RESOURCES</div>
+        <h2>프로젝트 자료</h2>
+        <p class="lead">소스 코드와 상세 문서를 확인할 수 있는 링크를 모아두는 영역입니다.</p>
+        <p class="lead" style="font-size: small;">* 클라이언트 소스 코드는 별도 관리 정책에 따라 비공개로 유지하고 있으며, 주요 구현 내용은 본 포트폴리오에서 확인하실 수 있습니다.</p>
+      </div>
+      <div class="resource-list">
+    <div class="resource">
+        <strong>GitHub Repository</strong>
+        <div>
+            <span class="link-git">SmartEMR-WPF :</span>
+            <span class="repo-private">Private Repository</span>
+        </div>
+        <div>
+            <span class="link-git">SmartEMR-API :</span>
+            <a href="https://github.com/OKCHANGHYEOK/SmartEMR-API">
+                https://github.com/OKCHANGHYEOK/SmartEMR-API
+            </a>
+        </div>
+    </div>
+        <div class="resource">
+          <strong>README</strong>
+          <span>
+            <a href="./README.md">View README</a>
+          </span>
+        </div>
+        <div class="resource">
+          <strong>Architecture / Design Notes</strong>
+          <a href="./Images/SmartEMR_System_Architecture.png">View Architecture Diagram</a>
+          <br>
+          <a alt="준비중입니다.">View ERD(to be added)</a>
+        </div>
+        <div class="resource"><strong>Demo Video</strong><span>View Demo Video(to be added)</span></div>
+      </div>
+      <p class="note">※ 공개 저장소에 올리기 전에는 실제 서비스 계정, 인증 정보, API 키, 개인정보 및 운영 데이터가 포함되지 않았는지 확인하세요.</p>
+    </section>
+  </main>
+
+  <footer>
+    SmartEMR · Personal Project Portfolio
+  </footer>
+
+  <script>
+      const sections = document.querySelectorAll("main section");
+      const navLinks = document.querySelectorAll("nav a");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const currentId = entry.target.id;
+
+            navLinks.forEach(link => {
+              link.classList.toggle(
+                "active",
+                link.getAttribute("href") === `#${currentId}`
+            );
+          });
+        }
+      });
+    }, {
+      rootMargin: "-20% 0px -65% 0px"
+    });
+
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
